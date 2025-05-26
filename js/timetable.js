@@ -51,16 +51,7 @@ function construstTimeTable(timeTable, talksData) {
             }
             
             else {
-                if (!talk) {
-                  console.warn("一致しない講演者名: " + name);
-                  return {
-                    time: time,
-                    name: name,  // fallback 表示
-                    title: "(未登録)",
-                    major: ""
-                  };
-                }
-              
+                // 通常講演者
                 return {
                   time: time,
                   name: talk.name,
