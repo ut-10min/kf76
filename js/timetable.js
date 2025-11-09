@@ -35,7 +35,7 @@ function construstTimeTable(timeTable, talksData) {
                 return {
                     time: time,
                     name: "ワークショップ：十河翔",
-                    title: "自分の「推し（好きなもの）」を言語化するとともに、他者の「推し」やその理由を知ることを通して、「推し」が社会や生活と、どのように紐づいているかを考える、その最初のキッカケを得ることとします。",
+                    title: "ワークショップ：人生100年時代の「推し」と幸福論",
                     major: "学際情報学府"
                 };
             }
