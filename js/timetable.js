@@ -10,13 +10,8 @@ function construstTimeTable(timeTable, talksData) {
             var index = 0;
             var talk = talksData.filter(function (t) { return t.name.indexOf(name) == 0; })[index];
             console.log(talk)
-            // 何部目か判定
-            if (
-                (name == "第1部") ||
-                (name == "第2部") ||
-                (name == "第3部") ||
-                (name == "第4部")
-            ) {
+            // ---- 部見出し ----
+            if (name === "第1部" || name === "第2部" || name === "第3部" || name === "第4部") {
                 return { time: name, name: "", title: "", major: "" };
             }
 
@@ -30,11 +25,11 @@ function construstTimeTable(timeTable, talksData) {
                 return { time: time, name: "", title: "座談会", major: "" };
             }
 
-            // 平野さんWS
+            // 十河さんWS
             else if (name == "十河WS") {
                 return {
                     time: time,
-                    name: "ワークショップ：十河翔",
+                    name: "十河翔",
                     title: "ワークショップ：人生100年時代の「推し」と幸福論",
                     major: "学際情報学府"
                 };
